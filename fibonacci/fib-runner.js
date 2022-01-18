@@ -13,6 +13,8 @@ console.log(recursiveFib(5));
 console.log(recursiveFib(40));
 
 timer.stop();
+timer.printTimeInSeconds();
+
 timer.start();
 
 console.log(dynamicFib(1));
