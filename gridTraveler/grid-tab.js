@@ -9,10 +9,8 @@ function gridTravel(w, l) {
     table[1][1] = 1;
 
     for (let i = 0; i <= w; i++) {
-        const arr = table[i];
-
         for (let j = 0; j <= l; j++) {
-            const value = arr[j];
+            const value = table[i][j];
 
             if (table[i][j + 1] !== undefined)
                 table[i][j + 1] += value;
