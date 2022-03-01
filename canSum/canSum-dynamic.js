@@ -1,23 +1,22 @@
 'use strict';
 
 function canSum(target, numbers, memo = {}) {
+    if (target in memo) return memo[target];
     if (target === 0) return true;
     if (target < 0) return false;
-
-    const key = target.toString();
-    if (memo[key]) return memo[key];
+    
 
     for (let index = 0; index < numbers.length; index++) {
         const number = numbers[index];
         const remainder = target - number;
         
         if (canSum(remainder, numbers, memo)) {
-            memo[key] = true;
+            memo[target] = true;
             return true;
         }
 
     }
-    memo[key] = true;
+    memo[target] = false;
     return false;
 }
 
