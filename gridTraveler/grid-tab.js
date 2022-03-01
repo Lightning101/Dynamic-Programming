@@ -12,11 +12,11 @@ function gridTravel(w, l) {
         for (let j = 0; j <= l; j++) {
             const value = table[i][j];
 
-            if (table[i][j + 1] !== undefined)
+            if (j + 1 <= l)
                 table[i][j + 1] += value;
-            
-            if (table[i+1] !== undefined && table[i+1][j] !== undefined)
-                table[i+1][j] += value;
+
+            if (i + 1 <= w)
+                table[i + 1][j] += value;
         }
     }
     return table[w][l];
