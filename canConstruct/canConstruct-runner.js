@@ -4,8 +4,6 @@ const canConstructRecursive = require('./canConstruct-recursive');
 const canConstructDynamic = require('./canConstruct-dynamic');
 const canConstructTab = require('./canConstruct-tab');
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 

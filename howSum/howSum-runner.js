@@ -4,8 +4,6 @@ const howSumDynamic = require('./howSum-dynamic');
 const howSumTab = require('./howSum-tab');
 
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 console.time("Execution time");

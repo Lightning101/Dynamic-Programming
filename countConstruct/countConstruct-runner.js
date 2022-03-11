@@ -3,8 +3,6 @@
 const countConstructRecursive = require('./countConstruct-recursive');
 const countConstructDynamic = require('./countConstruct-dynamic');
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 

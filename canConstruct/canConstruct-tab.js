@@ -10,13 +10,9 @@ function canConstruct(word, wordBank) {
         if (value)
             for (let j = 0; j < wordBank.length; j++) {
                 const testWord = wordBank[j];
-                const subWord = word.substring(i, word.length);
-                const index = subWord.indexOf(testWord);
-                if (index === 0) {
-                    table[i+ testWord.length] = true;
+                if (word.slice(i, i + testWord.length) === testWord) {
+                    table[i + testWord.length] = true;
                 }
-
-
             }
     }
     return table.pop();

@@ -4,8 +4,6 @@ const bestSumDynamic = require('./bestSum-dynamic');
 const bestSumTab = require('./bestSum-tab');
 
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 

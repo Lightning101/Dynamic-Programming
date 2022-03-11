@@ -3,8 +3,6 @@
 const allConstructRecursive = require('./allContruct-recursive');
 const allConstructDynamic = require('./allContruct-dynamic');
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 

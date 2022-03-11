@@ -4,8 +4,6 @@ const canSumRecursive = require('./canSum-recursive');
 const canSumDynamic = require('./canSum-dynamic');
 const canSumTab = require('./canSum-tab');
 
-const Timer = require('../utils/timer');
-const timer = new Timer();
 
 
 console.time("Execution time");
