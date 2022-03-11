@@ -8,7 +8,7 @@ const timer = new Timer();
 
 
 
-timer.start();
+console.time("Execution time");
 
 console.log(countConstructRecursive('purple', ['purp', 'p', 'ur', 'le', 'purpl']));
 console.log(countConstructRecursive('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd']));
@@ -16,10 +16,9 @@ console.log(countConstructRecursive('skateboard', ['bo', 'rd', 'ate', 't', 'ska'
 console.log(countConstructRecursive('enterapotentpot', ['a', 'p', 'ent', 'enter', 'ot', 'o', 't']));
 console.log(countConstructRecursive('eeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
-timer.start();
+console.time("Execution time");
 
 console.log(countConstructDynamic('purple', ['purp', 'p', 'ur', 'le', 'purpl']));
 console.log(countConstructDynamic('abcdef', ['ab', 'abc', 'cd', 'def', 'abcd']));
@@ -27,6 +26,5 @@ console.log(countConstructDynamic('skateboard', ['bo', 'rd', 'ate', 't', 'ska', 
 console.log(countConstructDynamic('enterapotentpot', ['a', 'p', 'ent', 'enter', 'ot', 'o', 't']));
 console.log(countConstructDynamic('eeeeeeeeeeeeeeeeeeeeeeeeeeeef', ['e', 'ee', 'eee', 'eeee', 'eeeee', 'eeeeee']));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 

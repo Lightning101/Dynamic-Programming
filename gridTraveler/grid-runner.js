@@ -6,32 +6,29 @@ const gridTab = require('./grid-tab');
 const Timer =   require('../utils/timer');
 const timer = new Timer();
 
-timer.start();
+console.time("Execution time");
 
 console.log(gridRecursive(2,3));
 console.log(gridRecursive(3,3));
 console.log(gridRecursive(15,15));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
-timer.start();
+console.time("Execution time");
 
 console.log(gridDynamic(2,3));
 console.log(gridDynamic(3,3));
 console.log(gridDynamic(15,15));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
-timer.start();
+console.time("Execution time");
 
 console.log(gridTab(2,3));
 console.log(gridTab(3,3));
 console.log(gridTab(15,15));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
 
 

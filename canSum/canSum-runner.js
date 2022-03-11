@@ -8,35 +8,32 @@ const Timer = require('../utils/timer');
 const timer = new Timer();
 
 
-timer.start();
+console.time("Execution time");
 
 console.log(canSumRecursive(7, [2, 3]));
 console.log(canSumRecursive(7, [4, 3]));
 console.log(canSumRecursive(7, [2, 3, 1]));
 console.log(canSumRecursive(300, [7, 14]));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
-timer.start();
+console.time("Execution time");
 
 console.log(canSumDynamic(7, [2, 3]));
 console.log(canSumDynamic(7, [4, 3]));
 console.log(canSumDynamic(7, [2, 3, 1]));
 console.log(canSumDynamic(300, [7, 14]));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
-timer.start();
+console.time("Execution time");
 
 console.log(canSumTab(7, [2, 3]));
 console.log(canSumTab(7, [4, 3]));
 console.log(canSumTab(7, [2, 3, 1]));
 console.log(canSumTab(300, [7, 14]));
 
-timer.stop();
-timer.printTimeInSeconds();
+console.timeEnd("Execution time");
 
 
 
